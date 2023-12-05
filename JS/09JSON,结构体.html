@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+  // var user = {
+  //   name: "张三",
+  //   age: 10,
+  //   gender: "男",
+  //   address: "北京市",
+  //   // eat: function () {
+  //   //   alert("吃饭");
+  //   // }
+
+  //   eat() {
+  //     alert("吃饭");
+  //   }
+  // }
+
+  // alert(user.name);
+  // user.eat();
+
+  //定义json
+
+  var jasonstr = '{"name": "tom", "age": 18, "addr": ["北京市", "上海市", "南京市"]}';
+  alert(jasonstr.name);
+
+  //将json字符串转换为json对象
+  var obj = JSON.parse(jasonstr);
+  alert(obj.name);
+
+  //将json对象转换为json字符串
+  alert(JSON.stringify(obj));
+
+</script>
