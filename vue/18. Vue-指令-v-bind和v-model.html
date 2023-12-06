@@ -1,0 +1,31 @@
+<!-- FILEPATH: /c:/Users/ZGG01/Desktop/JAVAWEB/vue/18. Vue-指令-v-bind和v-model.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue-指令-v-bind</title>
+    <script src="../vue.js/vue.js"></script>
+</head>
+
+<body>
+    <div id="app">
+        <a v-bind:href="URL">lianjie1</a>
+        <a :href="URL">lianjie1</a>
+
+        <input type="text" v-model="URL">
+    </div>
+
+    <script>
+        new Vue({
+            el: "#app",
+            data: {
+                URL: "https://www.baidu.com"
+            }
+        })
+    </script>
+</body>
+
+</html>
